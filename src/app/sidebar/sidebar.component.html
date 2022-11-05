@@ -1,0 +1,54 @@
+<mat-nav-list>
+    
+    <mat-divider></mat-divider>
+
+    
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="">Dashboard</a>
+    
+
+    <mat-divider></mat-divider>
+    <div>
+     <mat-form-field appearance="fill">
+        <mat-label>Components</mat-label>
+        <mat-select #mode value="components">
+          <mat-option value="mails">Mails</mat-option>
+          <mat-option value="time line">Time Line</mat-option>
+          <mat-option value="tree view">Tree View</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+      
+      <div>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Charts</mat-label>
+        <mat-select #mode value="Charts">
+          <mat-option routerLinkActive="list-item-active" routerLink="/pie" value="piechart">pies</mat-option>
+          
+        </mat-select>
+      </mat-form-field>
+    
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+    </a>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/empl">
+      <mat-icon>face</mat-icon>
+      Employee list
+  </a>
+
+</mat-nav-list>
